@@ -7,7 +7,7 @@ bash 'Configure Remi Repo' do
     EOH
 end
 
-%w{ php php-fpm php-mbstring php-pdo php-pdo_mysql php-ldap }.each do |pkg|
+%w{ php php-fpm php-mbstring php-pdo php-pdo_mysql }.each do |pkg|
     package pkg do
       action :install
     end
